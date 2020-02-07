@@ -1,0 +1,2 @@
+FROM uddhavgautam/machinelearning:MachineLearningV1
+EXPOSE 8888/tcp
