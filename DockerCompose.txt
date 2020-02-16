@@ -1,2 +1,3 @@
-FROM uddhavgautam/machinelearning:MachineLearningV1
+FROM uddhavgautam/machinelearning:MachineLearningV4
 EXPOSE 8888/tcp
+--net=host 
