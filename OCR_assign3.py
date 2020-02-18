@@ -96,7 +96,7 @@ learning_rate_reduction = ReduceLROnPlateau(monitor='val_acc',
                                             factor=0.5,
                                             min_lr=0.00001)
 
-epochs = 1  # Turn epochs to 30 to get 0.9967 accuracy
+epochs = 10  # Turn epochs to 30 to get 0.9967 accuracy
 batch_size = 86
 
 # Without data augmentation i obtained an accuracy of 0.98114

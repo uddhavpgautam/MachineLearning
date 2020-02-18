@@ -5,7 +5,7 @@ from pylab import scatter, show, title, xlabel, ylabel, plot, contour
 #Evaluate the linear regression
 def compute_cost(X, y, theta):
     '''
-    Comput cost for linear regression
+    Compute cost for linear regression
     '''
     #Number of training samples
     m = y.size
@@ -44,7 +44,7 @@ def gradient_descent(X, y, theta, alpha, num_iters):
 
 
 #Load the dataset
-data = loadtxt('ex1data1.txt', delimiter=',')
+data = loadtxt('./ex1data1.txt', delimiter=',')
 
 #Plot the data
 scatter(data[:, 0], data[:, 1], marker='o', c='b')
