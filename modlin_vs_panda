@@ -1,0 +1,22 @@
+import modin.pandas as pd
+from multiprocessing import Process, freeze_support
+import pandas as pd1
+import time
+
+class ModlinPandas:
+    def func1(self):
+        seconds1 = time.time()
+        df = pd.read_csv('./iris.csv', iterator=True, chunksize=1500)
+        seconds2 = time.time()
+        print(seconds2-seconds1)
+    def func2(self):
+        seconds11 = time.time()
+        df1 = pd1.read_csv('./iris.csv')
+        seconds21 = time.time()
+        print(seconds21-seconds11)
+
+if __name__ == '__main__':
+    freeze_support()
+    modlinPandas = ModlinPandas()
+    Process(target=modlinPandas.func1).start()
+    modlinPandas.func2()
